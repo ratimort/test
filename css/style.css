@@ -139,5 +139,37 @@ header {
   float: left;
   width: 50%;
   padding: 1vw; }
-  .photo .column img {
-    margin-top: 1vw; }
+  .photo .column .item {
+    margin-top: 2vw;
+    position: relative;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease; }
+    .photo .column .item:hover .item-i {
+      opacity: 1; }
+    .photo .column .item .item-i {
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      -webkit-transition: all .3s ease;
+      -o-transition: all .3s ease;
+      transition: all .3s ease;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.5); }
+    .photo .column .item .l {
+      position: relative;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); }
+      .photo .column .item .l svg {
+        width: 4vw;
+        margin: .2272727273em auto .6818181818em auto; }
+      .photo .column .item .l h2 {
+        font-size: 2vw;
+        color: #EE8572; }
+      .photo .column .item .l p {
+        font-size: 1.5vw; }
